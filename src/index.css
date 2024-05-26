@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+  /* h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  } */
+  h3 {
+    @apply text-4xl text-tertiary;
+  }
+  p {
+    @apply text-gray-400 text-xl;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@layer utilities {
+  .flex_center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex_between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex_start {
+    @apply flex items-center justify-start;
+  }
+  .flex_around {
+    @apply flex items-center justify-around;
+  }
+  .text_xxs {
+    @apply text-[8px];
+  }
+  /* .box-shadow {
+    @apply shadow-[0px_0px_1px_0px_rgba(0,0,0,0.75)];
+  } */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rokkitt','sans';
+}
